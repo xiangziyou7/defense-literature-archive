@@ -133,7 +133,21 @@ def classify_paper(title: str, abstract: str, keywords_config: dict) -> Tuple[fl
     return best_score, best_direction, best_subcategory, matched_keywords
 
 
-def is_paper_seen(doi: str, seen_data: dict) -> bool:
+# 时间过滤配置
+MAX_PAPER_AGE_YEARS = 3
+
+
+def is_paper_recent(year_str: str) -> bool:
+    """检查论文发表年份是否在近3年内"""
+    if not year_str:
+        return True  # 没有年份信息则保留
+    
+    try:
+        year = int(year_str)
+        current_year = datetime.now().year
+        return year >= (current_year - MAX_PAPER_AGE_YEARS)
+    except:
+        return True  # 解析失败则保留
     """检查文献是否已处理"""
     return doi in seen_data.get("papers", {})
 
@@ -207,8 +221,14 @@ def scan_journal(journal: dict, keywords_config: dict, seen_data: dict, config: 
             title = paper.get("title", "").replace("<em>", "").replace("</em>", "")
             doi = paper.get("doi", "") or paper.get("DOI", "") or paper.get("url", "")
             abstract = paper.get("abstract", "")
+            year = paper.get("year", "")
             
             if not doi:
+                continue
+            
+            # 时间过滤：仅保留近3年文献
+            if not is_paper_recent(year):
+                print(f"  [跳过] {title[:50]}... (发表年份: {year}, 超过{MAX_PAPER_AGE_YEARS}年)")
                 continue
             
             if is_paper_seen(doi, seen_data):
