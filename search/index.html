@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兵器领域文献检索系统</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        h1 { color: #333; }
+        .search-box { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .search-box input, .search-box select { padding: 10px; margin: 5px; border: 1px solid #ddd; border-radius: 4px; }
+        .search-box input[type="text"] { width: 300px; }
+        .stats { background: #e3f2fd; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+        .paper-list { background: white; border-radius: 8px; overflow: hidden; }
+        .paper-item { padding: 15px; border-bottom: 1px solid #eee; }
+        .paper-item:hover { background: #f9f9f9; }
+        .paper-title { font-weight: bold; color: #1976d2; }
+        .paper-meta { font-size: 0.9em; color: #666; margin-top: 5px; }
+        .tag { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.8em; margin-right: 5px; }
+        .tag-direction { background: #e8f5e9; color: #2e7d32; }
+        .tag-subcategory { background: #fff3e0; color: #e65100; }
+    </style>
+</head>
+<body>
+    <h1>🔍 兵器领域文献检索系统</h1>
+    <div class="stats"><strong>文献总数:</strong> 4 篇 | <strong>最后更新:</strong> 2026-03-26T17:46:55.040540</div>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="输入关键词搜索...">
+        <select id="directionFilter">
+            <option value="">全部方向</option>
+            <option value="引信系统可靠性">引信系统可靠性</option>
+            <option value="智能侵彻">智能侵彻</option>
+        </select>
+        <select id="journalFilter"><option value="">全部期刊</option></select>
+        <button onclick="search()">搜索</button>
+    </div>
+    <div class="paper-list" id="paperList"></div>
+    <script>
+        const papers = [{"title": "弹体高速侵彻混凝土的效应实验", "doi": "10.11883/1001-1455(2010)01-0001-06", "abstract": "利用高速侵彻设备进行了不同条件下弹体高速侵彻混凝土系列实验,探讨了高速撞击条件下弹体侵彻能力,弹体侵彻稳定性,弹体变形和破坏等问题,揭示了混凝土中半流体侵彻阶段的典型特征:刚体侵彻深度上限和对应的刚体侵彻初速上限,弹道弯曲,弹体严重侵蚀且伴随弯曲/断裂等.", "journal": "爆炸与冲击", "relevance": 0.5, "direction": "智能侵彻", "subcategory": "侵彻机理", "matched_keywords": ["侵彻深度"], "authors": [], "year": "", "source": "", "url": "https://xueshu.baidu.com/ndscholar/browse/detail?paperid=ec4cb1b59b3078664eebff4dc861a08c", "seen_at": "2026-03-26T17:45:20.620232", "downloaded": false}, {"title": "Combustion, Explosion and Shock Waves", "doi": "https://xueshu.baidu.com/ndscholar/browse/detail?paperid=ff2c5d956b069b6a7ca379bb65eb7cc8", "abstract": "The journal Combustion, Explosion, and Shock Waves is one of the few worldwide publications of results obtained in research in physics and chemistry of combustion of substances in various phase states, detonation processes, obtaining new materials in combustion waves, shock waves, and detonation waves, explosive welding, response of materials and structures to dynamic loading, high-velocity impact, and powder compaction. Structural and chemical transformations of matter in shock and detonation waves and related phenomena are considered. Papers on the development of analytical and numerical models of phenomena under study are also published in the journal. A specific feature of the journal is the wide scope of combustion and explosion topics: from initiation of combustion in gases to the response of materials to shock loading, from computer-aided modeling of detonation of powerful high explosives to obtaining superconducting materials under shock compression. Reviews are also published in addition to regular papers. Papers of high priority, which require rapid publication, are published without any delay in the section \"Urgent communications.\" Combustion, Explosion, and Shock Waves is a translation of the peer-reviewed journal Fizika Goreniya i Vzryza , a publication of the Siberian Division of the Russian Academy of Sciences since 1965. The English version of the journal is published simultaneously with the Russian original.", "journal": "爆炸与冲击", "relevance": 0.3333333333333333, "direction": "智能侵彻", "subcategory": "电子战应用", "matched_keywords": ["EW"], "authors": [], "year": "", "source": "", "url": "https://xueshu.baidu.com/ndscholar/browse/detail?paperid=ff2c5d956b069b6a7ca379bb65eb7cc8", "seen_at": "2026-03-26T17:45:27.761067", "downloaded": false}, {"title": "Journal of Intelligent & Robotic Systems", "doi": "https://xueshu.baidu.com/ndscholar/browse/detail?paperid=1868b10bd7a102b3886079dc2eef024a", "abstract": "The Journal of Intelligent and Robotic Systems bridges the gap between theory and practice in all areas of intelligent systems and robotics. It publishes original, peer reviewed contributions from initial concept and theory to prototyping to final product development and commercialization.  On the theoretical side, the journal features papers focusing on intelligent systems engineering, distributed intelligence systems, multi-level systems, intelligent control, multi-robot systems, cooperation and coordination of unmanned vehicle systems, etc.  On the application side, the journal emphasizes autonomous systems, industrial robotic systems, multi-robot systems, aerial vehicles, mobile robot platforms, underwater robots, sensors, sensor-fusion, and sensor-based control. Readers will also find papers on real applications of intelligent and robotic systems (e.g., mechatronics, manufacturing, biomedical, underwater, humanoid, mobile/legged robot and space applications, etc.).", "journal": "Journal of Intelligent & Robotic Systems", "relevance": 0.3333333333333333, "direction": "智能侵彻", "subcategory": "电子战应用", "matched_keywords": ["EW"], "authors": [], "year": "", "source": "", "url": "https://xueshu.baidu.com/ndscholar/browse/detail?paperid=1868b10bd7a102b3886079dc2eef024a", "seen_at": "2026-03-26T17:46:34.636605", "downloaded": false}, {"title": "Updating Aerospace and Defense ATS", "doi": "10.1002/dac.1246", "abstract": "Some of the at the challenges towards the replacement of legacy testers and the underlying factors behind the Department of Defense's (DoD) long-term system upgrade strategy are discussed. The memorandum designated the Army's Integrated Family of Test Equipment (IFTE) focused on providing a vertically integrated automatic test system (ATS) capability for sustainment and field levels of maintenance. The Joint Services Electronic Combat System Tester (JSECST) represents a joint USAF-USN procurement program featuring a flight line electronic warfare systems tester for end-to-end functional testing capability of electronic combat systems installed in or on operational aircraft. The Next Generation Automatic Test Systems (NxTest) Integrated Product Team (IPT) was chartered by the DoD to jointly develop the technologies necessary for implementation in the next generation of ATS.", "journal": "International Journal of Aerospace and Defense Technology", "relevance": 0.3333333333333333, "direction": "智能侵彻", "subcategory": "电子战应用", "matched_keywords": ["electronic warfare"], "authors": [], "year": "", "source": "", "url": "https://xueshu.baidu.com/ndscholar/browse/detail?paperid=d4e08db6c0ce494cc8bf61c010f8f3aa", "seen_at": "2026-03-26T17:46:46.539394", "downloaded": false}];
+        const journals = [...new Set(papers.map(p => p.journal))];
+        const journalFilter = document.getElementById('journalFilter');
+        journals.forEach(j => { const opt = document.createElement('option'); opt.value = j; opt.textContent = j; journalFilter.appendChild(opt); });
+        function search() {
+            const keyword = document.getElementById('searchInput').value.toLowerCase();
+            const direction = document.getElementById('directionFilter').value;
+            const journal = document.getElementById('journalFilter').value;
+            let filtered = papers.filter(p => {
+                const matchKeyword = !keyword || p.title.toLowerCase().includes(keyword) || (p.abstract && p.abstract.toLowerCase().includes(keyword));
+                const matchDirection = !direction || p.direction === direction;
+                const matchJournal = !journal || p.journal === journal;
+                return matchKeyword && matchDirection && matchJournal;
+            });
+            renderPapers(filtered);
+        }
+        function renderPapers(papers) {
+            const list = document.getElementById('paperList');
+            list.innerHTML = papers.slice(0, 100).map(p => '<div class="paper-item"><div class="paper-title">' + p.title + '</div><div class="paper-meta"><span class="tag tag-direction">' + (p.direction || '未分类') + '</span> <span class="tag tag-subcategory">' + (p.subcategory || '其他') + '</span> | ' + p.journal + ' | 相关性: ' + (p.relevance || 0).toFixed(2) + '</div><div class="paper-meta">DOI: <a href="https://doi.org/' + p.doi + '" target="_blank">' + p.doi + '</a></div></div>').join('');
+        }
+        renderPapers(papers);
+    </script>
+</body>
+</html>

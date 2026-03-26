@@ -1,0 +1,128 @@
+{
+  "journals": [
+    {
+      "id": "binggong-xuebao",
+      "name": "兵工学报",
+      "name_en": "Acta Armamentarii",
+      "search_terms": ["兵工学报", "Acta Armamentarii"],
+      "issn": "1000-1093",
+      "type": "chinese",
+      "priority": 1
+    },
+    {
+      "id": "bqzb-gcxb",
+      "name": "兵器装备工程学报",
+      "name_en": "Journal of Ordnance Equipment Engineering",
+      "search_terms": ["兵器装备工程学报"],
+      "issn": "2096-2309",
+      "type": "chinese",
+      "priority": 1
+    },
+    {
+      "id": "ieee-trans-reliability",
+      "name": "IEEE Transactions on Reliability",
+      "name_en": "IEEE Transactions on Reliability",
+      "search_terms": ["IEEE Transactions on Reliability"],
+      "issn": "0018-9529",
+      "type": "english",
+      "priority": 2
+    },
+    {
+      "id": "jdms",
+      "name": "Journal of Defense Modeling and Simulation",
+      "name_en": "Journal of Defense Modeling and Simulation",
+      "search_terms": ["Journal of Defense Modeling and Simulation"],
+      "issn": "1548-5132",
+      "type": "english",
+      "priority": 2
+    },
+    {
+      "id": "hpfsykz-xuebao",
+      "name": "火炮发射与控制学报",
+      "name_en": "Journal of Gun Launch & Control",
+      "search_terms": ["火炮发射与控制学报"],
+      "issn": "1672-1099",
+      "type": "chinese",
+      "priority": 1
+    },
+    {
+      "id": "ieee-trans-ai",
+      "name": "IEEE Transactions on Artificial Intelligence",
+      "name_en": "IEEE Transactions on Artificial Intelligence",
+      "search_terms": ["IEEE Transactions on Artificial Intelligence"],
+      "issn": "2691-8223",
+      "type": "english",
+      "priority": 2
+    },
+    {
+      "id": "defense-tech",
+      "name": "Defense Technology",
+      "name_en": "Defense Technology",
+      "search_terms": ["Defense Technology journal"],
+      "issn": "2214-9147",
+      "type": "english",
+      "priority": 2
+    },
+    {
+      "id": "ress",
+      "name": "Reliability Engineering & System Safety",
+      "name_en": "Reliability Engineering & System Safety",
+      "search_terms": ["Reliability Engineering and System Safety"],
+      "issn": "0951-8320",
+      "type": "english",
+      "priority": 2
+    },
+    {
+      "id": "dandao-xuebao",
+      "name": "弹道学报",
+      "name_en": "Journal of Ballistics",
+      "search_terms": ["弹道学报"],
+      "issn": "1004-499X",
+      "type": "chinese",
+      "priority": 1
+    },
+    {
+      "id": "see",
+      "name": "Systems Engineering and Electronics",
+      "name_en": "Systems Engineering and Electronics",
+      "search_terms": ["Systems Engineering and Electronics"],
+      "issn": "1004-4132",
+      "type": "english",
+      "priority": 2
+    },
+    {
+      "id": "ijadt",
+      "name": "International Journal of Aerospace and Defense Technology",
+      "name_en": "International Journal of Aerospace and Defense Technology",
+      "search_terms": ["International Journal of Aerospace and Defense Technology"],
+      "issn": "xxx",
+      "type": "english",
+      "priority": 3
+    },
+    {
+      "id": "jirs",
+      "name": "Journal of Intelligent & Robotic Systems",
+      "name_en": "Journal of Intelligent and Robotic Systems",
+      "search_terms": ["Journal of Intelligent Robotic Systems"],
+      "issn": "0921-0296",
+      "type": "english",
+      "priority": 2
+    },
+    {
+      "id": "bzyc",
+      "name": "爆炸与冲击",
+      "name_en": "Explosion and Shock Waves",
+      "search_terms": ["爆炸与冲击", "Explosion and Shock Waves"],
+      "issn": "1001-1455",
+      "type": "chinese",
+      "priority": 1
+    }
+  ],
+  "scan_config": {
+    "interval_hours": 6,
+    "papers_per_journal": 30,
+    "max_days_old": 30,
+    "download_oa": true,
+    "notify_new": true
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "core_directions": {
+    "fuze_reliability": {
+      "name": "引信系统可靠性",
+      "subcategories": {
+        "reliability_design": {
+          "name": "引信系统可靠性设计",
+          "keywords": [
+            "引信可靠性设计", "引信冗余设计", "引信容错设计",
+            "fuze reliability design", "redundancy design fuze",
+            "引信安全系统", "引信保险机构", "引信解除保险",
+            "失效安全", "fail-safe fuze", "引信可靠性分配"
+          ]
+        },
+        "fault_diagnosis": {
+          "name": "引信故障诊断与定位",
+          "keywords": [
+            "引信故障诊断", "引信故障定位", "引信故障检测",
+            "fuze fault diagnosis", "fuze anomaly detection",
+            "引信状态监测", "引信健康监测", "故障树分析",
+            "故障模式分析", "FMEA fuze", "引信失效分析"
+          ]
+        },
+        "life_prediction": {
+          "name": "引信寿命预测与评估",
+          "keywords": [
+            "引信寿命预测", "引信剩余寿命", "引信贮存寿命",
+            "fuze life prediction", "remaining useful life fuze",
+            "引信加速寿命试验", "引信老化评估", "引信可靠性评估",
+            "寿命分布", "威布尔分析引信", "引信退化分析"
+          ]
+        },
+        "environment_adaptability": {
+          "name": "引信环境适应性",
+          "keywords": [
+            "引信环境适应性", "引信环境试验", "引信高过载",
+            "fuze environmental adaptability", "fuze shock test",
+            "引信温度适应性", "引信潮湿环境", "引信电磁环境",
+            "引信振动试验", "引信跌落试验", "引信冲击试验"
+          ]
+        },
+        "test_technology": {
+          "name": "引信试验技术与方法",
+          "keywords": [
+            "引信试验技术", "引信仿真试验", "引信靶场试验",
+            "fuze test technology", "fuze simulation test",
+            "引信虚拟试验", "引信加速试验", "引信可靠性验证",
+            "引信验证试验", "引信检测技术"
+          ]
+        },
+        "fault_tolerance_control": {
+          "name": "引信系统容错控制",
+          "keywords": [
+            "引信容错控制", "引信冗余控制", "引信重构控制",
+            "fuze fault tolerant control", "fuze reconfiguration",
+            "引信自适应控制", "引信智能控制", "引信鲁棒控制"
+          ]
+        },
+        "maintenance_support": {
+          "name": "引信维修保障与可靠性提升",
+          "keywords": [
+            "引信维修保障", "引信保障性", "引信维修性",
+            "fuze maintenance support", "fuze supportability",
+            "引信可靠性增长", "引信可靠性改进", "引信延寿"
+          ]
+        }
+      }
+    },
+    "intelligent_penetration": {
+      "name": "智能侵彻",
+      "subcategories": {
+        "penetration_mechanism": {
+          "name": "侵彻机理",
+          "keywords": [
+            "侵彻机理", "侵彻过程", "侵彻深度", "侵彻轨迹",
+            "penetration mechanism", "penetration process",
+            "终点弹道", "terminal ballistics",
+            "侵彻阻力", "侵彻模型", "侵彻公式",
+            "空穴膨胀理论", "cavity expansion",
+            "侵彻极限", "极限穿透", "侵彻破坏"
+          ]
+        },
+        "material_structure": {
+          "name": "侵彻材料与结构设计",
+          "keywords": [
+            "侵彻材料", "侵彻体设计", "侵彻结构",
+            "penetrator design", "penetration material",
+            "穿甲弹", "armor piercing", "破甲弹",
+            "动能弹", "kinetic energy penetrator",
+            "战斗部设计", "warhead design",
+            "侵彻体材料", "钨合金", "贫铀", "弹体结构"
+          ]
+        },
+        "simulation": {
+          "name": "侵彻仿真",
+          "keywords": [
+            "侵彻仿真", "侵彻数值模拟", "侵彻有限元",
+            "penetration simulation", "penetration FEM",
+            "LS-DYNA侵彻", "AUTODYN侵彻", "侵彻数值计算",
+            "材料本构模型", "Johnson-Cook", "JH-2",
+            "状态方程", "侵彻网格", "侵彻算法"
+          ]
+        },
+        "range_test": {
+          "name": "靶场试验",
+          "keywords": [
+            "靶场试验", "侵彻试验", "弹道试验",
+            "ballistic test", "penetration test",
+            "弹道靶", "弹道炮", "高速撞击试验",
+            "侵彻测量", "侵彻测速", "侵彻高速摄影"
+          ]
+        },
+        "armor_protection": {
+          "name": "侵彻防护",
+          "keywords": [
+            "侵彻防护", "装甲防护", "复合装甲",
+            "armor protection", "composite armor",
+            "陶瓷装甲", "反应装甲", "主动防护",
+            "装甲设计", "抗弹性能", "装甲材料"
+          ]
+        },
+        "fuze_penetration_coordination": {
+          "name": "引信-侵彻协同控制",
+          "keywords": [
+            "引信侵彻协同", "侵彻引信", "引信起爆控制",
+            "fuze penetration coordination", "hard target fuze",
+            "计层引信", "计行程引信", "硬目标引信",
+            "侵彻探测", "侵彻计数", "侵彻延时起爆",
+            "引信炸点控制", "最佳起爆"
+          ]
+        },
+        "ai_llm_application": {
+          "name": "AI大模型应用",
+          "keywords": [
+            "大模型应用", "LLM应用", "GPT应用",
+            "large language model application",
+            "人工智能应用", "AI应用", "深度学习应用",
+            "智能算法", "神经网络应用", "transformer应用",
+            "大模型军事应用", "AI国防应用"
+          ]
+        },
+        "model_lightweight": {
+          "name": "大模型轻量化",
+          "keywords": [
+            "模型轻量化", "模型压缩", "知识蒸馏",
+            "model compression", "knowledge distillation",
+            "模型量化", "模型剪枝", "轻量级模型",
+            "边缘部署", "嵌入式AI", "移动端部署"
+          ]
+        },
+        "multimodal_fusion": {
+          "name": "多模态融合",
+          "keywords": [
+            "多模态融合", "多模态学习", "跨模态",
+            "multimodal fusion", "multimodal learning",
+            "视觉语言模型", "图像文本融合",
+            "多传感器融合", "信息融合"
+          ]
+        },
+        "unmanned_systems": {
+          "name": "无人系统协同",
+          "keywords": [
+            "无人系统", "无人机", "无人车", "无人艇",
+            "unmanned system", "UAV", "UGV", "USV",
+            "集群协同", "多智能体协同", "编队控制",
+            "协同作战", "分布式协同", "无人作战"
+          ]
+        },
+        "payload_optimization": {
+          "name": "AI载荷优化",
+          "keywords": [
+            "载荷优化", "AI载荷", "智能载荷",
+            "payload optimization", "AI payload",
+            "载荷设计", "载荷分配", "任务载荷"
+          ]
+        },
+        "electronic_warfare": {
+          "name": "电子战应用",
+          "keywords": [
+            "电子战", "电子对抗", "电子干扰",
+            "electronic warfare", "EW",
+            "电子侦察", "电子防护", "电子攻击",
+            "雷达对抗", "通信对抗", "电磁对抗"
+          ]
+        }
+      }
+    }
+  },
+  "exclude_keywords": [
+    "综述", "review article", "editorial", "编者按", "征稿",
+    "会议通知", "期刊简介", "投稿须知", "消息", "新闻报道"
+  ],
+  "relevance_threshold": 0.25,
+  "title_weight": 0.6,
+  "abstract_weight": 0.4
+}
